@@ -33,7 +33,7 @@
 > 바코드 찍고 엔터누르면 대출중인도서 테이블, 회원정보, 도서정보가 자동으로 채워짐<br><br><br><br>
 <h2><b>3. Manager_Book</b></h2>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMTE3/MDAxNTU3NTY3ODgwNzY2.HSMK9pHWlER4UUg-ZqewDfkiARsW4Byd6rPzEr00jF0g.F6Pov5J1H7vEbib6jdeQWbV4xQ4pL0Q2d64qr2vubCMg.PNG.tag94/%EA%B7%B8%EB%A6%BC4.png?type=w966" width="650px"/>
-<img src=" width="450px"/>
+
  <b>도서목록</b><br>
 > 왼쪽의 전체도서테이블에는 DB에 저장된 모든 도서가 나온다.(상태에서 정상인 도서만)<br>
 > 관내도서 : 상태가 대출중이 아닌 도서. 즉, 관내에 남아 있는 도서<br>
@@ -58,6 +58,48 @@
 > 유저가 요청한 도서가 데이터목록에서 삭제됨<br><br><br><br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMjMx/MDAxNTU3NTY3OTQ1OTc4.KonmzAWicC7jwkJtoUyOtcuGMXgM7HnvcHSCMebtgpQg.MrvxgeZ3tcj4V5PScSkXdbmtgk_NBJrGHQQjFFlD_NEg.PNG.tag94/%EA%B7%B8%EB%A6%BC6.png?type=w966" width="650px"/>
 <b>구매도서</b>
+> 요청이 들어온 도서를 구입하게되면 추가되는 목록<br><br><br><br><br><br>
+
+<h2><b>4. Manager_Member</b></h2>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMTIy/MDAxNTU3NTY4MDMyNTU5.f9mAFRSwWagKpHabekiL8M6bBRExgCSpcw-wGT7I4WYg.4uqIbgx0lo_6iBZTcMQkGjSLUaXg-cPEMhQgQZ1o6lIg.PNG.tag94/%EA%B7%B8%EB%A6%BC8.png?type=w966" width="650px"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfNCAg/MDAxNTU3NTY4MDMyNTQ0.HMkmdCOm6uQLZ4vv_3GOZv34zrVvLp-S6DvZk7kkLP4g.kdsqphZtVFYiJ8KdfRiN9X9K87BcxIuef2ESZByTdvsg.PNG.tag94/%EA%B7%B8%EB%A6%BC9.png?type=w966" width="650px"/>
+<b>회원관리</b><br>
+> 회원관리 클릭시 삭제되지않은 정상 회원 모두 테이블에 출력<br>
+> 엑셀로 저장 누르면 테이블에 표시된 모든 회원이 엑셀로 저장<br>
+> 필터를 줘서 확장자는 엑셀로만 가능<br>
+> 검색은 초이스를 줘서 회원에 관한 컬럼을 선택 가능 <br>
+> 검색어는 컬럼에 맞춰 불러올 수 있음<br>
+> 회원삭제버튼 누르면 delete문을 날리는게 아니라 삭제한 회원관리로 DB 내에서 상태만 수정(일종의 휴지통)<br>
+> 삭제한 회원을 다시 정상회원으로 복구 가능<br><br><br><br>
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfNTUg/MDAxNTU3NTY4MTMwNDE1.9A5ABsXyhPdfBTTeO7EWpQjwYyt1jnwsa3oHoTDqDF4g.IgHxa7xEN7Ss30Pw9yCKQ7ZTQi5grmW6ZLMwpSxxQd8g.PNG.tag94/%EA%B7%B8%EB%A6%BC10.png?type=w966" width="650px"/>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMjY2/MDAxNTU3NTY4MTU3NjEz.geb-PcPdSE0uf730AIkj7aIrq-BEnH7uzPeD6tdaPHog.VtwzhIx1C2HXa3_skhG2014Q4lTiw_pkDL2LJNp0JxIg.PNG.tag94/%EA%B7%B8%EB%A6%BC11.png?type=w966" width="650px"/>
+<b>DB관리</b><br>
+> cmd창에서 exp라는 명령어를 날려서 cmd창에서 userID와 password를 입력하고 파일 경로를 입력해서 .dmp파일로 저장 <br>
+> Tables에서 백업을 원하는 테이블을 선택해서 따로 백업가능<br><br><br><br>
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMTgx/MDAxNTU3NTY4MjAyOTY4.PwD_d9PwLX-mMki8I7KyzYFZGk_nxO6tSSDCdQJSyIkg.BcRysL54cTVLKDwnuJ_o30Az1enpoRTOERt3ppW3lqUg.PNG.tag94/%EA%B7%B8%EB%A6%BC12.png?type=w966" width="650px"/>
+> 복구 누르면 exp가 imp로 바뀌었을뿐 코드방식은 동일<br>
+> 문제점: 백업햇던 테이블명이 같다면 복구가 되지않음<br>
+>      이걸 해결하기 위해서는 기존에 있던 테이블을 드랍해야 가능<br>
+>      즉, 드랍을 우선 수행하고 imp명령어를 수행해야 백업이 가능<br><br><br><br><br><br>
+
+# Client Page
+<hr/>
+<h2><b>5. Client_Search</b></h2>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMjc0/MDAxNTU3NTY4MzAyOTEz.n4V7zoE3I-ayOzarTE9b1DPXZ4OfKUjy5hBnwCJNta8g.ucEsE4an2Ft5WkWGYCeTvfC4W8gQxT0teiebOMx3eXIg.PNG.tag94/%EA%B7%B8%EB%A6%BC13.png?type=w966" width="650px"/>
+> 관내에 있는 도서를 유저가 검색<br><br><br><br>
+<h2><b>6. Client_Request</b></h2>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfODcg/MDAxNTU3NTY4MzAyOTI5.ux7ImWjHTjUGORsuRdPZ-FmBlPVrewNr-QbvClmjiPYg.RheXRhZRKX2zfgCEK_Xud4mbusVXMQBmGaW0x8koKn4g.PNG.tag94/%EA%B7%B8%EB%A6%BC14.png?type=w966" width="650px"/>
+> 팝업창<br>
+> 확인 : 전부 입력 후 확인 누르면 ‘관리자’요청 테이블에 데이터가 들어오게 된다.<br><br><br><br>
+<h2><b>7. Client_Request</b></h2>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTFfODcg/MDAxNTU3NTY4MzAyOTI5.ux7ImWjHTjUGORsuRdPZ-FmBlPVrewNr-QbvClmjiPYg.RheXRhZRKX2zfgCEK_Xud4mbusVXMQBmGaW0x8koKn4g.PNG.tag94/%EA%B7%B8%EB%A6%BC14.png?type=w966" width="650px"/>
+> 이달의 신간도서 : Book_regist_date 컬럼이 이번달의 신간 도서만 출력<br>
+> 이달의 독서왕 : 이번달의 가장많은 도서를 대여한 회원 10명을 출력<br>
+> 나의 도서 대출 기록 : 로그인한 유저의 대출도서를 모두 출력<br><br><br><br><br>
+
+
 
 
 
