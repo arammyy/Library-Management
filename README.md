@@ -57,7 +57,7 @@
 > 상태는 요청중과, 완료 두가지가 있는데 완료로 수정할 경우 도서목록으로 데이터가 들어감<br>
 > 유저가 요청한 도서가 데이터목록에서 삭제됨<br><br><br><br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMjMx/MDAxNTU3NTY3OTQ1OTc4.KonmzAWicC7jwkJtoUyOtcuGMXgM7HnvcHSCMebtgpQg.MrvxgeZ3tcj4V5PScSkXdbmtgk_NBJrGHQQjFFlD_NEg.PNG.tag94/%EA%B7%B8%EB%A6%BC6.png?type=w966" width="650px"/>
-<b>구매도서</b>
+<b>구매도서</b><br>
 > 요청이 들어온 도서를 구입하게되면 추가되는 목록<br><br><br><br><br><br>
 
 <h2><b>4. Manager_Member</b></h2>
