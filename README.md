@@ -35,7 +35,7 @@
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMTE3/MDAxNTU3NTY3ODgwNzY2.HSMK9pHWlER4UUg-ZqewDfkiARsW4Byd6rPzEr00jF0g.F6Pov5J1H7vEbib6jdeQWbV4xQ4pL0Q2d64qr2vubCMg.PNG.tag94/%EA%B7%B8%EB%A6%BC4.png?type=w966" width="650px"/>
 
  <b>도서목록</b><br>
-> 왼쪽의 전체도서테이블에는 DB에 저장된 모든 도서가 나온다.(상태에서 정상인 도서만)<br>
+> 왼쪽의 전체도서테이블에는 DB에 저장된 모든 도서가 나온다.(상태에서 정상인 도서만)<br><br>
 > 관내도서 : 상태가 대출중이 아닌 도서. 즉, 관내에 남아 있는 도서<br>
 > 대출도서 : 상태가 대출중인 도서만 테이블에 출력<br>
 > 검색버튼 : 검색을 원하는 도서명 작성 후 검색하면 좌측 테이블에 입력되고 테이블에 나타나는 레코드 클릭 시 테이블에 작성된 데이터를 받아와 우측에 출력<br>
