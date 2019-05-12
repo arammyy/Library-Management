@@ -52,8 +52,10 @@
 > 책임자, 사유, 파손상세정보 : 정상처리로 수정될 경우 DB에서 데이터가 삭제<br><br><br><br>
 
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMTI3/MDAxNTU3NTY3OTQwMDEy.IGE1dzGiTvL9w55dlWB2EGjjepM2l16sLy29bGKM8_Yg.qjlA5aS0OwYt8Gjk_UJrvGFABL4Ks6Y5hFm24vJgoiUg.PNG.tag94/%EA%B7%B8%EB%A6%BC7.png?type=w966" width="650px"/>
- <b>요청도서</b>
- <br><br><br><br>
+ <b>요청도서</b><br>
+> Client가 도서를 요청하면 Manager페이지의 요청 목록에 추가됨<br>
+> 상태는 요청중과, 완료 두가지가 있는데 완료로 수정할 경우 도서목록으로 데이터가 들어감<br>
+> 유저가 요청한 도서가 데이터목록에서 삭제됨<br><br><br><br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMjMx/MDAxNTU3NTY3OTQ1OTc4.KonmzAWicC7jwkJtoUyOtcuGMXgM7HnvcHSCMebtgpQg.MrvxgeZ3tcj4V5PScSkXdbmtgk_NBJrGHQQjFFlD_NEg.PNG.tag94/%EA%B7%B8%EB%A6%BC6.png?type=w966" width="650px"/>
 <b>구매도서</b>
 
