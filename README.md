@@ -26,10 +26,14 @@
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMjc1/MDAxNTU3NTY3Nzk5Nzk3.0q5RXbb3dViT1TE5VM-tmckpVXAeyMf4AOE7FcY8glYg.TscaPX2xMQLQv7Rt4xyW0ZmAOAe91ygb3Mfbyo1AAfkg.PNG.tag94/%EA%B7%B8%EB%A6%BC2.png?type=w966" width="650px"/>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMjQw/MDAxNTU3NTY3ODIwNTc5.E_k6Iw8BScBBs9-bntZX0kLAN8cf1DnEq_aefGiBC80g.s4cxPb2yq77JrKvo2_F4F3wbIWiSpGNdEEUTVKOFj9Ig.PNG.tag94/%EA%B7%B8%EB%A6%BC3.png?type=w966" width="650px"/>
 <br>
+> JPanel 배열을 이용한 화면전환 처리<br>
 > 관리자로 로그인 시 맨 처음 보이는 대여/반납 페이지<br>
+> JDBC Connection 객체의 COMMUT, ROLLBACK을 이용한 트랜잭션처리를 이용한 SQL문 수행
+> 디자인(View)과 데이터(Model)를 분리시키기위한 MVC패턴이 적용된 JTable의 TableModel을 적용한 List구현<br>
 > 회원 이름 or 휴대폰 번호로 검색 시, DB에 저장된 회원의 정보가 들어오며 회원목록과 회원정보에 값이 채워진다.<br>
 > 대출중인 도서 : 현재 회원이 대출 한 도서의 데이터가 들어옴<br>
 > 대출 도서 목록 : 회원이 당일 대출하는 도서의 목록이 들어옴<br>
+> Barcode Reader기를 이용한 바코드 데이터 처리<br>
 > 바코드 찍고 엔터누르면 대출중인도서 테이블, 회원정보, 도서정보가 자동으로 채워짐<br><br><br><br>
 <h2><b>3. Manager_Book</b></h2>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTFfMTE3/MDAxNTU3NTY3ODgwNzY2.HSMK9pHWlER4UUg-ZqewDfkiARsW4Byd6rPzEr00jF0g.F6Pov5J1H7vEbib6jdeQWbV4xQ4pL0Q2d64qr2vubCMg.PNG.tag94/%EA%B7%B8%EB%A6%BC4.png?type=w966" width="650px"/>
