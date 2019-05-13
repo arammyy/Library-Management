@@ -28,7 +28,7 @@
 <br>
 > JPanel 배열을 이용한 화면전환 처리<br>
 > 관리자로 로그인 시 맨 처음 보이는 대여/반납 페이지<br>
-> JDBC Connection 객체의 COMMUT, ROLLBACK을 이용한 트랜잭션처리를 이용한 SQL문 수행
+> JDBC Connection 객체의 COMMUT, ROLLBACK을 이용한 트랜잭션처리를 이용한 SQL문 수행<br>
 > 디자인(View)과 데이터(Model)를 분리시키기위한 MVC패턴이 적용된 JTable의 TableModel을 적용한 List구현<br>
 > 회원 이름 or 휴대폰 번호로 검색 시, DB에 저장된 회원의 정보가 들어오며 회원목록과 회원정보에 값이 채워진다.<br>
 > 대출중인 도서 : 현재 회원이 대출 한 도서의 데이터가 들어옴<br>
